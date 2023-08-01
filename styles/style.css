@@ -43,8 +43,9 @@ body {
 .container__image {
     width: 32rem;
     height: 24rem;
-    border-radius: 1rem 1rem 0 0;
-    overflow: hidden;   
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;    
 }
 
 .container__text {
@@ -71,7 +72,7 @@ body {
     font-family: 'Fraunces';
     font-size: 3rem;
     font-weight: 700;
-    color: #000;
+    color: #1C232B;
     margin-bottom: 1.3rem;
 }
 
@@ -131,11 +132,149 @@ body {
 
 .attribution a {
     text-decoration: none;
-    color: #000;
+    color: #1C232B;
     transition: 200ms ease-in;
 }
 
 .attribution a:hover {
     color: #3C8067;
     text-decoration: underline;
+}
+
+@media (orientation: landscape) {
+
+    body {
+        gap: .8rem;
+    }
+
+    .container {
+        width: 58rem;
+        height: 32rem;
+        display: flex;
+    }
+    
+    .container__image {
+        width: 29rem;
+        height: 32rem;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-position: center;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .container__text {
+        width: 29rem;
+        height: 32rem;
+        padding: 1rem 2.4rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .container__text h3 {
+        font-size: 1.1rem;
+        margin-block: 1.2rem;
+    }
+
+    .container__text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .text__p {
+        width: 24rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container__price {
+        width: 17rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .price-one {
+        font-size: 2.8rem;
+    }
+
+    .price-two {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        width: 24.2rem;
+        height: 4.5rem;
+    }
+}
+
+@media (width>= 1094px) {
+
+    body {
+        gap: 1.2rem;
+    }
+
+    .container {
+        width: 75rem;
+        height: 58rem;
+        display: flex;
+    }
+    
+    .container__image {
+        width: 37.5rem;
+        height: 58rem;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-position: center;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .container__text {
+        width: 37.5rem;
+        height: 58rem;
+        padding: 2rem 3.5rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .container__text h3 {
+        font-size: 1.3rem;
+        margin-block: 2rem;
+    }
+
+    .container__text h1 {
+        width: 25rem;
+        font-size: 3.6rem;
+        margin-bottom: 2.9rem;
+    }
+
+    .text__p {
+        width: 27rem;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .container__price {
+        width: 22rem;
+        margin-bottom: 3.8rem;
+    }
+
+    .price-one {
+        font-size: 3.5rem;
+    }
+
+    .price-two {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        width: 30.3rem;
+        height: 6rem;
+    }
+
+    .btn__text {
+        font-size: 1.6rem;
+    }
+
+    .btn img {
+        width: 1.8rem;
+    }
+
+    .attribution {
+        font-size: 1.5rem;
+    }
 }
